@@ -1,20 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Home </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong></strong>
+    <ion-tab-button (click)="openSlides()">
+      <ion-icon name="airplane-outline"></ion-icon>
+      <ion-label>Ver intro</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="showAgain()">
+      <ion-icon name="reload-outline"></ion-icon>
+      <ion-label>Volver a ver el intro</ion-label>
+    </ion-tab-button>
   </div>
 </ion-content>

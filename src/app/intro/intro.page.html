@@ -1,0 +1,20 @@
+<ion-content>
+  <ion-slides [options]="slideOptions">
+    <ion-slide *ngFor="let slide of collection">
+      <ion-icon slot="icon-only" name="close" (click)="finish()"></ion-icon>
+      <img
+        src="../../assets/icon/blockchain.png"
+        alt="MusicMatch"
+        style="height: 70px; width: 70px"
+      />
+      <h1>{{slide.title}}</h1>
+      <h2>{{slide.subTitle}}</h2>
+      <p>{{slide.description}}</p>
+      <ion-icon name="{{slide.icon}}"></ion-icon>
+    </ion-slide>
+    <ion-tab-button (click)="setFalse()">
+      <ion-icon name="play"></ion-icon>
+      <ion-label>Photo</ion-label>
+    </ion-tab-button>
+  </ion-slides>
+</ion-content>
