@@ -1,6 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> Home </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -10,7 +12,6 @@
       <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <div id="container">
     <strong></strong>
     <ion-tab-button (click)="openSlides()">
@@ -20,6 +21,14 @@
     <ion-tab-button (click)="showAgain()">
       <ion-icon name="reload-outline"></ion-icon>
       <ion-label>Volver a ver el intro</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="login()">
+      <ion-icon name="play"></ion-icon>
+      <ion-label>Volver a ver el intro</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="logout()">
+      <ion-icon name="stop"></ion-icon>
+      <ion-label>Logout</ion-label>
     </ion-tab-button>
   </div>
 </ion-content>

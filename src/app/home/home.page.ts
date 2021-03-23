@@ -23,4 +23,14 @@ export class HomePage {
     console.log("show again");
     this.storage.set("showedIntro", false);
   }
+  login() {
+    console.log("login");
+    this.router.navigateByUrl("/login");
+  }
+  logout() {
+    console.log("logout");
+    this.storage.set("isUserLoggedIn", false);
+    this.router.navigateByUrl("/login");
+
+  }
 }
